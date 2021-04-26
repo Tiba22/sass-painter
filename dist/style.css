@@ -1,0 +1,244 @@
+body header {
+  width: 100%;
+  background-color: black;
+}
+body header .containerHead .topHead {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+body header .containerHead .topHead i {
+  color: blue;
+  padding-right: 8px;
+}
+body header .containerHead .topHead span {
+  color: #655f50;
+  padding-right: 20px;
+}
+body header .containerHead .botHead {
+  width: 70%;
+  margin: 0 auto;
+}
+body header .containerHead .botHead ul {
+  list-style: none;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+body header .containerHead .botHead ul li {
+  padding-right: 50px;
+}
+body header .containerHead .botHead ul i {
+  font-size: 10px;
+}
+body .containerJumbo {
+  background-image: url("../img/bg-painter-home.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+}
+body .containerJumbo .jumbo {
+  width: 70%;
+  margin: 0 auto;
+  padding: 30px 0 70px 0;
+}
+body .containerJumbo .jumbo img {
+  padding-top: 20px;
+  width: 20%;
+}
+body .containerJumbo .jumbo p {
+  width: 35%;
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+body .containerJumbo .jumbo h3, body .containerJumbo .jumbo span {
+  color: #cb26b5;
+  font-style: italic;
+}
+body .containerJumbo .jumbo div {
+  margin-top: 20px;
+}
+body .containerJumbo .jumbo div button {
+  padding: 20px 40px;
+  border-color: #000;
+  font-size: 16px;
+  margin-top: 30px;
+}
+body .containerJumbo .jumbo div button:first-child {
+  background-color: black;
+  color: white;
+}
+body .containerJumbo .jumbo div button:last-child {
+  background-color: inherit;
+}
+body main {
+  width: 100%;
+  background-color: #ccc;
+}
+body main .containerMain {
+  width: 70%;
+  margin: 0 auto;
+}
+body main .containerMain .firstSection h2 {
+  text-align: center;
+  padding: 50px 0;
+}
+body main .containerMain .firstSection div.block-section-first {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+body main .containerMain .firstSection div.block-section-first div {
+  min-height: 180px;
+  background-color: white;
+}
+body main .containerMain .firstSection div.block-section-first div img {
+  width: 100%;
+}
+body main .containerMain .firstSection div.block-section-first div .container-text {
+  padding: 20px;
+}
+body main .containerMain .firstSection div.block-section-first div .container-text h4, body main .containerMain .firstSection div.block-section-first div .container-text p {
+  margin-bottom: 25px;
+}
+body main .containerMain .firstSection div.block-section-first div .container-text p {
+  width: 90%;
+}
+body main .containerMain .firstSection div.block-section-first #center-block {
+  margin: 0 2%;
+}
+body main .containerMain .secondSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+body main .containerMain .secondSection div[class*=card] {
+  height: 300px;
+  width: 50%;
+}
+body main .containerMain .secondSection div[class*=card] .text {
+  padding: 60px;
+}
+body main .containerMain .secondSection div[class*=card] .text p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+body main .containerMain .secondSection div[class*=card] .text button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+body main .containerMain .secondSection .card1 {
+  background-color: #3c1567;
+  color: white;
+}
+body main .containerMain .secondSection .card2 {
+  background-image: url("../img/wacom-painter.jpg");
+  background-size: cover;
+}
+body main .containerMain .secondSection .card2 img {
+  width: 500px;
+  padding: 10px 0px 0 50px;
+}
+body main .containerMain .secondSection .card3 {
+  background-image: url("../img/painter-master.jpg");
+  background-size: cover;
+}
+body main .containerMain .secondSection .card4 {
+  background-color: #3c3c3c;
+  color: white;
+}
+body main .containerMain .secondSection .card5 {
+  background-color: #0072bc;
+  color: white;
+}
+body main .containerMain .secondSection .card6 {
+  background-image: url("../img/business-education.jpg");
+  background-size: cover;
+}
+body main .containerMain .thirdSection .containerList {
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+}
+body main .containerMain .thirdSection .containerList ul {
+  list-style: none;
+  width: calc(100% / 4);
+  height: 300px;
+}
+body main .containerMain .thirdSection .containerList ul li {
+  padding-bottom: 20px;
+}
+body main .containerMain .thirdSection .containerList ul li a {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-size: 13px;
+}
+body main .containerMain .thirdSection .social-link {
+  padding-bottom: 30px;
+}
+body main .containerMain .thirdSection .social-link ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+}
+body main .containerMain .thirdSection .social-link ul li {
+  padding-right: 15px;
+}
+body main .containerMain .thirdSection .social-link ul li a {
+  text-decoration: none;
+  font-size: 35px;
+}
+body main .containerMain .thirdSection .social-link ul li .fa-instagram-square {
+  color: #e4405f;
+}
+body main .containerMain .thirdSection .social-link ul li .fa-facebook-square {
+  color: #3b5998;
+}
+body main .containerMain .thirdSection .social-link ul li .fa-twitter-square {
+  color: #1da1f2;
+}
+body main .containerMain .thirdSection .social-link ul li .fa-youtube-square {
+  color: #cd201f;
+}
+body main .containerMain .thirdSection .social-link ul li .fa-pinterest-square {
+  color: #bd081c;
+}
+body main .containerMain .thirdSection .social-link ul li .fa-wifi {
+  color: #ff8d00;
+}
+body footer {
+  width: 100%;
+  background-color: black;
+}
+body footer .containerFooter {
+  width: 70%;
+  margin: 0 auto;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body footer .containerFooter .copyright a {
+  text-decoration: none;
+  color: #50544a;
+  padding-right: 20px;
+}
+body footer .containerFooter .copyright span {
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}

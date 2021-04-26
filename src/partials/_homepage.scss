@@ -1,0 +1,273 @@
+@mixin marginAuto {
+  width: 70%;
+  margin: 0 auto;
+}
+
+@mixin displayFlex{
+  display: flex;
+  align-items: center;
+}
+
+body {
+  header {
+    width: 100%;
+    background-color: black;
+
+    .containerHead {
+      .topHead{
+        @include marginAuto;
+        padding-top: 15px;
+        @include displayFlex;
+        justify-content: flex-end;
+
+        i{
+          color: blue;
+          padding-right: 8px;
+        }
+        span{
+          color: #655f50;
+          padding-right: 20px;
+        }
+      }
+      .botHead {
+        @include marginAuto;
+        ul{
+          list-style: none;
+          margin-top: 20px;
+          @include displayFlex;
+          color: white;
+          li{
+            padding-right: 50px;
+          }
+          i{
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  } // Fine Header
+  .containerJumbo {
+    background-image: url('../img/bg-painter-home.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    .jumbo {
+      @include marginAuto;
+      padding: 30px 0 70px 0;
+
+      img {
+        padding-top: 20px;
+        width: 20%;
+      }
+      p {
+        width: 35%;
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 25px;
+      }
+      h3, span {
+        color: #cb26b5;
+        font-style: italic;
+      }
+      div {
+        margin-top: 20px;
+
+        button {
+          padding: 20px 40px;
+          border-color: #000;
+          font-size: 16px;
+          margin-top: 30px;
+        }
+        button:first-child {
+          background-color: black;
+          color: white;
+        }
+        button:last-child {
+          background-color: inherit;
+        }
+      }
+    }
+  }
+  main {
+    width: 100%;
+    background-color: #ccc;
+
+    .containerMain {
+      @include marginAuto;
+      .firstSection {
+        h2 {
+          text-align: center;
+          padding: 50px 0;
+        }
+        div.block-section-first{
+          @include displayFlex;
+          justify-content: space-around;
+
+          div {
+            min-height: 180px;
+            background-color: white;
+
+            img{
+              width: 100%;
+            }
+            .container-text {
+              padding: 20px;
+
+              h4, p{
+                margin-bottom: 25px;
+              }
+              p{
+                width: 90%;
+              }
+            }
+          }
+          #center-block {
+            margin: 0 2%;
+          }
+        }
+      }
+
+      .secondSection {
+        width: 100%;
+        @include displayFlex;
+        flex-wrap: wrap;
+        margin: 50px 0;
+
+        div[class*="card"] {
+          height: 300px;
+          width: 50%;
+
+          .text {
+            padding: 60px;
+
+            p {
+              margin-top: 30px;
+              margin-bottom: 20px;
+              font-size: 17px;
+            }
+
+            button {
+              padding: 10px 20px;
+              font-size: 16px;
+            }
+          }
+        }
+
+        .card1 {
+          background-color: #3c1567;
+          color: white;
+        }
+        .card2 {
+          background-image: url('../img/wacom-painter.jpg');
+          background-size: cover;
+
+          img {
+            width: 500px;
+            padding: 10px 0px 0 50px;
+          }
+        }
+        .card3 {
+          background-image: url('../img/painter-master.jpg');
+          background-size: cover;
+        }
+        .card4 {
+          background-color: #3c3c3c;
+          color: white;
+        }
+        .card5 {
+          background-color: #0072bc;
+          color: white;
+        }
+        .card6 {
+          background-image: url('../img/business-education.jpg');
+          background-size: cover;
+        }
+      } // Fine secondSection
+
+      .thirdSection {
+        .containerList {
+          @include displayFlex;
+          padding-left: 15px;
+
+          ul {
+            list-style: none;
+            width: calc(100% / 4);
+            height: 300px;
+
+            li {
+              padding-bottom: 20px;
+
+              a {
+                text-decoration: none;
+                color: #4d4d4d;
+                font-size: 13px;
+              }
+            }
+          }
+
+        }
+        .social-link {
+          padding-bottom: 30px;
+
+          ul {
+            @include displayFlex;
+            justify-content: flex-end;
+            list-style: none;
+
+            li {
+              padding-right: 15px;
+              a {
+                text-decoration: none;
+                font-size: 35px;
+              }
+            }
+            li .fa-instagram-square {
+              color: #e4405f;
+            }
+            li .fa-facebook-square {
+              color: #3b5998;
+            }
+            li .fa-twitter-square {
+              color: #1da1f2;
+            }
+            li .fa-youtube-square {
+              color: #cd201f;
+            }
+            li .fa-pinterest-square {
+              color: #bd081c;
+            }
+            li .fa-wifi {
+              color: #ff8d00;
+            }
+          }
+
+        }
+      }
+    }
+  }   // Fine container Main
+
+  footer {
+    width: 100%;
+    background-color: black;
+
+    .containerFooter {
+      @include marginAuto;
+      height: 100px;
+      @include displayFlex;
+      justify-content: space-between;
+
+      .copyright {
+
+        a {
+          text-decoration: none;
+          color: #50544a;
+          padding-right: 20px;
+        }
+        span {
+          color:white;
+        }
+      }
+    }
+  }
+
+}  // Fine Body
